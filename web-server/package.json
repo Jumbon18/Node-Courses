@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Alex Pyvovarov",
+  "scripts": {
+    "start": "node src/app.js"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
