@@ -43,7 +43,7 @@ weatherForm.addEventListener('submit',(event)=>{
    event.preventDefault();
 
    renderLoader();
-
+fetch('/about');
     fetch(`/weather?address=${search.value}`)
         .then((response)=>{
 

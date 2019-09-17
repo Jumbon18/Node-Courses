@@ -5,7 +5,7 @@ const geoCode = require('./geocode');
 const forecast = require('./forecast');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // Define path for Express config
 const publicDirPath  = path.join(__dirname, '../public');
@@ -22,9 +22,10 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirPath));
 
 app.get('',(req,res)=>{
+    res.send();
     res.render('index',{
         title:'Weather',
-        name:'Alex Pyvovarov'
+        name:'Alex Pyvovarov',
     });
 });
 app.get('/about',(req,res)=>{
